@@ -2,7 +2,7 @@ name: otel_medusa
 description: >-
   OpenTelemetry instrumentation for medusa by Dartastic.io. Adds standard
   OpenTelemetry observability to applications that use medusa.
-version: 0.1.0
+version: 0.1.1-wip
 repository: https://github.com/dartastic/otel_medusa
 homepage: https://dartastic.io
 
