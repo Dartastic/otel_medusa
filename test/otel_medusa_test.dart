@@ -1,4 +1,4 @@
-// Licensed under the Dartastic Pro Software License Agreement.
+// Licensed under the Apache License, Version 2.0
 // Copyright 2025-2026 Mindful Software LLC d/b/a Dartastic.io, All rights reserved.
 
 import 'package:dartastic_opentelemetry/dartastic_opentelemetry.dart';
@@ -18,8 +18,8 @@ void main() {
   setUp(() => harness.clear());
 
   Map<String, Object> attrsOf(Span s) => {
-    for (final a in s.attributes.toList()) a.key: a.value,
-  };
+        for (final a in s.attributes.toList()) a.key: a.value,
+      };
 
   test('carts.complete records api + region + payment status', () async {
     await tracedMedusa<String>(
